@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact - Maycee Elerick Photograhy</title>
+
+    <link rel="stylesheet" href="app.css"/>
+
+</head>
+
+<style>
+    body {
+        /* background-image: url('./images/bg-1.jpg'); */
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        font-family: sofia-pro, sans-serif;
+    }
+</style>
+
+<body>
+
+<header id="header">
+    <nav class="navbar">
+        <div class="nav-buttons">
+            <ul>
+                <li>
+                    <div class="monogram" style="font-family: fira, monospace; font-style: normal; font-weight: 700;">
+                        MJ
+                    </div>
+                </li>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="#">Featured</a></li>
+                <li>
+                    <div class="dropdown">
+                        <button class="dropbtn">
+                            Projects</button>
+                        <div class="dropdown-content">
+                            <a href="index.html">
+                                Project 1</a>
+                            <a href="index.html">
+                                Project 2</a>
+                            <a href="index.html">
+                                Project 3</a>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="#about">
+                    About</a></li>
+                <li><a href="/contact.html">
+                    Contact</a></li>
+                <li><a href="#login">
+                    Login</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+<div class="container-title"><h1>
+    Contact</h1></div>
+<br>
+<br>
+
+<div id="form" style="display: flex; justify-content: center;
+align-items: center">
+    <form action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="redirect" value="http://localhost:3000/thank-you.html">
+        <input type="hidden" name="access_key" value="b41680c9-fb91-44bf-b344-f91a71282476">
+        <label for="form">Name</label>
+        <input type="text" placeholder="Your name" name="name" required>
+        <label for="form">Email</label>
+        <input type="email" placeholder="example@email.com" name="email" required>
+        <label for="form">Message</label>
+        <textarea name="message" placeholder="Enter your message" required></textarea>
+        <div class="h-captcha" data-captcha="true"></div>
+        <button type="submit">Send Message</button>
+    </form>
+</div>
+
+<script>
+    window.onload = function() {
+        // Reset the form fields when the page loads
+        document.getElementById("form").reset();
+    };
+</script>
+<script src="https://web3forms.com/client/script.js" async defer></script>
+</body>

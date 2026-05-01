@@ -6,7 +6,6 @@ const cloudinaryWidget = cloudinary.createUploadWidget({
     if (!error && result && result.event === "success") {
         console.log('Uploaded image URL:', result.info.secure_url);
 
-        // Add uploaded image to your page
         const gallery = document.querySelector('.row');
         const column = document.createElement('div');
         column.classList.add('column');

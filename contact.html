@@ -2,8 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact - Maycee Elerick Photograhy</title>
 
+    <link rel="icon" href="/images/logo-favicon.png" type="image/png">
     <link rel="stylesheet" href="app.css"/>
 
 </head>
@@ -15,50 +17,17 @@
         background-repeat: no-repeat;
         background-position: center;
         font-family: sofia-pro, sans-serif;
+        padding-top: 70px;
     }
 </style>
 
 <body>
 
-<header id="header">
-    <nav class="navbar">
-        <div class="nav-buttons">
-            <ul>
-                <li>
-                    <div class="monogram" style="font-family: fira, monospace; font-style: normal; font-weight: 700;">
-                        MJ
-                    </div>
-                </li>
-                <li><a href="/index.html">Home</a></li>
-                <li><a href="#">Featured</a></li>
-                <li>
-                    <div class="dropdown">
-                        <button class="dropbtn">
-                            Projects</button>
-                        <div class="dropdown-content">
-                            <a href="index.html">
-                                Project 1</a>
-                            <a href="index.html">
-                                Project 2</a>
-                            <a href="index.html">
-                                Project 3</a>
-                        </div>
-                    </div>
-                </li>
-                <li><a href="#about">
-                    About</a></li>
-                <li><a href="/contact.html">
-                    Contact</a></li>
-                <li><a href="#login">
-                    Login</a></li>
-            </ul>
-        </div>
-    </nav>
-</header>
-<div class="container-title"><h1>
-    Contact</h1></div>
+<div id="navbar"></div>
+
 <br>
-<br>
+<div class="container-title-sub"><h1>Get in Touch</h1></div>
+
 
 <div id="form" style="display: flex; justify-content: center;
 align-items: center">
@@ -66,15 +35,42 @@ align-items: center">
         <input type="hidden" name="redirect" value="http://localhost:3000/thank-you.html">
         <input type="hidden" name="access_key" value="b41680c9-fb91-44bf-b344-f91a71282476">
         <label for="form">Name</label>
-        <input type="text" placeholder="Your name" name="name" required>
+        <input type="text" alt="Text field for Name" placeholder="Your full name" name="name" required>
         <label for="form">Email</label>
-        <input type="email" placeholder="example@email.com" name="email" required>
+        <input type="email" alt="Text field for Email" placeholder="example@email.com" name="email" required>
         <label for="form">Message</label>
         <textarea name="message" placeholder="Enter your message" required></textarea>
         <div class="h-captcha" data-captcha="true"></div>
         <button type="submit">Send Message</button>
     </form>
 </div>
+
+
+<div class="container-footer" style="color:black;">
+
+    <i class="fa-brands fa-instagram"></i>
+    <a href="https://instagram.com/">Instagram</a>
+    <br>
+
+    &copy; <span id="year"></span> Maycee Jade Photograhy
+</div>
+
+<!-- scripts -->
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+<script src="https://kit.fontawesome.com/d6053f7107.js" crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+
+<script src="/JS/active-nav-link.js"></script>
+
+<script src="/JS/navbar.js"></script>
+
+<script src="/JS/navbar-fetch.js"></script>
+
+<script src="/JS/date-handler.js"></script>
 
 <script>
     window.onload = function() {
@@ -83,4 +79,17 @@ align-items: center">
     };
 </script>
 <script src="https://web3forms.com/client/script.js" async defer></script>
+
+<script>
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }
+</script>
+
+
 </body>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Maycee Elerick Photograhy</title>
+
+    <link rel="stylesheet" href="app.css"/>
+
+    <script src="/JS/slideshow.js"></script>
+
+</head>
+
+<style>
+    body {
+        /* background-image: url('./images/slideshow/featured-1.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        */
+        font-family: sofia-pro, sans-serif;
+    }
+</style>
+
+<body>
+
+<header id="header">
+    <div class="topnav" id="myTopnav">
+        <a href="/index.html">Home</a>
+        <a href="/featured.html">Featured</a>
+        <a href="#">Collections</a>
+        <a href="/contact.html">Contact</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <img src="/images/hamburger.png">
+        </a>
+    </div>
+</header>
+
+<div class="container">
+    <div>Column 1</div>
+    <div>Column 2</div>
+    <div>Column 3</div>
+</div>
+
+<div class="container">
+    <div>Column 4</div>
+    <div>Column 5</div>
+    <div>Column 6</div>
+</div>
+
+<div id="form">
+    <form action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="b41680c9-fb91-44bf-b344-f91a71282476">
+        <input type="text" name="name" required>
+        <input type="email" name="email" required>
+        <textarea name="message" required></textarea>
+        <button type="submit">Submit</button>
+    </form>
+</div>
+
+<script>
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }
+</script>
+
+</body>
+
+</html>

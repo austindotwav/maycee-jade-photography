@@ -2,7 +2,6 @@ const images = [
     '/images/slideshow/featured-1.jpg',
     '/images/slideshow/featured-2.jpg',
     '/images/slideshow/featured-3.jpg',
-    '/images/slideshow/featured-4.jpg',
     '/images/slideshow/featured-5.jpg',
     '/images/slideshow/featured-6.jpg',
     '/images/slideshow/featured-7.jpg',

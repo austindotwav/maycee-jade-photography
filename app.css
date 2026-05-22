@@ -113,7 +113,8 @@ body {
 .container-title {
     font-weight: bold;
     font-family: fira, monospace;
-    color: white;
+    text-shadow: 0 2px 3px rgba(0,0,0,0.5), 0 0 0.25px rgba(255,255,255,0.5);
+    color: rgba(255, 255, 255, 0.75);
     font-size: 27px;
     z-index: 10;
     display: block;

@@ -15,7 +15,7 @@ fetch('navbar.html')
             // skip link check for hash links
             if (!url || url.startsWith('#')) return;
 
-            // if broken links are detected, they are made unavailable so that the user cannot click them
+            /* if broken links are detected, they are made unavailable so that the user cannot click them
             fetch(url)
                 .then(res => {
                     if (!res.ok) {
@@ -34,6 +34,7 @@ fetch('navbar.html')
                     link.title = 'Page not available';
                     link.innerText += ' (Unavailable)';
                 });
+                */
 
         });
 

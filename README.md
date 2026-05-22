@@ -1,5 +1,5 @@
 This is a website I created for MJ's Archives.
-The website is hosted [here](mayceejadephotography.com)
+The website is hosted [here](https://mayceejadephotography.com)
 if you'd like to view it!
 
 ![Landing page image](/images/screenshots/home-screenshot.png)

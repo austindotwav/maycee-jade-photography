@@ -1,4 +1,4 @@
-This is a website I created for Maycee Jade Photography.
+This is a website I created for MJ's Archives.
 The website is hosted [here](mayceejadephotography.com)
 if you'd like to view it!
 
